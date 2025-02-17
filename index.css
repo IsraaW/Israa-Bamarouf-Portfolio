@@ -3,18 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */
+    color: #FFFFFF; /* White text for high contrast on dark backgrounds */
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* This can be changed to a Google Font for better aesthetics */
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #0D1117; /* Very dark gray, almost black */
     font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Container styling */
+/* Container for centering the content */
 .container {
     width: 80%;
     margin: auto;
@@ -23,8 +22,8 @@ body {
 
 /* Hero Section */
 #hero {
-    background: #f4f4f4;
-    padding: 20px 0;
+    background: linear-gradient(145deg, #151D2B, #0D1117); /* Subtle gradient for depth */
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -32,69 +31,71 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 3px solid #4F78E2; /* Vibrant border color */
     margin-bottom: 20px;
 }
 
 /* Typography */
-h1, h2 {
-    color: #333;
-}
-
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    color: #58A6FF; /* Light blue for the main title */
+    margin-bottom: 0.5em;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    color: #C9D1D9; /* Lighter gray for subtitles */
+    margin-bottom: 1em;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    color: #C9D1D9; /* Consistent text color for body */
 }
 
-/* Links */
+/* Navigation and Links */
 a {
-    color: #1e90ff;
+    color: #58A6FF; /* Matching the title color for links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #4F78E2; /* Darker shade for hover effects */
 }
 
 /* Cards for projects */
 .card {
-    background: white;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    background: #161B22; /* Slightly lighter than body for contrast */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Soft white glow */
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
 }
 
 .card:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15); /* Increased glow on hover */
 }
 
-/* Project details */
+/* Project details list */
 .project-details ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .project-details li {
     padding: 5px 0;
+    border-bottom: 1px solid #333; /* Subtle separation */
 }
 
-/* Contact section */
+/* Contact Section Styling */
 #contact {
-    background: #f4f4f4;
+    background: #161B22; /* Matching card background */
     padding: 20px;
     text-align: center;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         width: 95%;
