@@ -1,20 +1,102 @@
-body{color: #330000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ffffcc;}
-    header,footer{background-color: #ccaa66; 
-    border-top: 3px double black;
-    border-bottom: 3px double black;
-    text-align: center;}
-    
-    #rightscolumn{background-color: #f1e8b0;
-                  margin-left:150px; 
-                   background-color:#f1e8b0; 
-                    padding:10px}
-    
-    #leftcolumn{background-color: #E8D882;
-                float:left; 
-                 width:150px; 
-                 padding-top:10px}
-    .navbar a{text-decoration:none; margin: 15px; display:block; background-color:#edd237}
-    
-    .floating{padding-left:40px; float:right}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* This can be changed to a Google Font for better aesthetics */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hero Section */
+#hero {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Typography */
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cards for projects */
+.card {
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/* Project details */
+.project-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-details li {
+    padding: 5px 0;
+}
+
+/* Contact section */
+#contact {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
