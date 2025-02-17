@@ -1,0 +1,20 @@
+body{color: #330000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffcc;}
+    header,footer{background-color: #ccaa66; 
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    text-align: center;}
+    
+    #rightscolumn{background-color: #f1e8b0;
+                  margin-left:150px; 
+                   background-color:#f1e8b0; 
+                    padding:10px}
+    
+    #leftcolumn{background-color: #E8D882;
+                float:left; 
+                 width:150px; 
+                 padding-top:10px}
+    .navbar a{text-decoration:none; margin: 15px; display:block; background-color:#edd237}
+    
+    .floating{padding-left:40px; float:right}
