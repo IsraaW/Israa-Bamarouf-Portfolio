@@ -1,103 +1,102 @@
-/* Basic Reset */
-* {
+
+/* Root Definitions for Colors and Fonts */
+:root {
+    --dark-bg: #05051C; /* Very dark background */
+    --light-text: #C9D1D9; /* Light gray text, was too light */
+    --accent-color: #B684E0; /* Soft purple */
+    --notice-text: #FFFFFF; /* White for special notices */
+    --mission-text: #A6A9B6; /* New variable for darker text color */
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */
-    color: #FFFFFF; /* White text for high contrast on dark backgrounds */
-}
-
-body {
-    background-color: #0D1117; /* Very dark gray, almost black */
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Container for centering the content */
-.container {
-    width: 80%;
-    margin: auto;
+    height: 100vh;
+    background: var(--dark-bg); /* Single color background */
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     overflow: hidden;
 }
 
-/* Hero Section */
-#hero {
-    background: linear-gradient(145deg, #151D2B, #0D1117); /* Subtle gradient for depth */
-    padding: 50px 0;
-    text-align: center;
+/* Container for Centered Content */
+.container {
+    width: 85%;
+    max-width: 1200px;
 }
 
+/* Styling for Headings */
+h1 {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin: 20px 0;
+}
+
+/* Specific paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    opacity: 0.85;
+}
+
+/* Specific style for mission statement */
+.mission-statement {
+    color: var(--mission-text); /* Darker color for mission statement */
+}
+
+/* Notice Text Styling */
+.notice {
+    color: var(--notice-text);
+}
+
+/* Profile Image in a Circle */
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #4F78E2; /* Vibrant border color */
-    margin-bottom: 20px;
+    border: 3px solid var(--accent-color);
+    object-fit: cover;
 }
 
-/* Typography */
-h1 {
-    font-size: 3em;
-    color: #58A6FF; /* Light blue for the main title */
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    font-size: 2em;
-    color: #C9D1D9; /* Lighter gray for subtitles */
-    margin-bottom: 1em;
-}
-
-p {
-    margin-bottom: 1em;
-    color: #C9D1D9; /* Consistent text color for body */
-}
-
-/* Navigation and Links */
-a {
-    color: #58A6FF; /* Matching the title color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #4F78E2; /* Darker shade for hover effects */
-}
-
-/* Cards for projects */
-.card {
-    background: #161B22; /* Slightly lighter than body for contrast */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Soft white glow */
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.card:hover {
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15); /* Increased glow on hover */
-}
-
-/* Project details list */
-.project-details ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.project-details li {
-    padding: 5px 0;
-    border-bottom: 1px solid #333; /* Subtle separation */
-}
-
-/* Contact Section Styling */
-#contact {
-    background: #161B22; /* Matching card background */
-    padding: 20px;
-    text-align: center;
-}
-
-/* Responsive adjustments */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
     .container {
         width: 95%;
     }
 }
+
+/* Ensures the nav element and its list take full width and center content */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+
+ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Enables flexbox for the list */
+    justify-content: center; /* Centers the list items horizontally */
+    align-items: center; /* Centers the list items vertically */
+}
+
+li {
+    margin: 0 10px; /* Adds some horizontal spacing between list items */
+}
+
+.linkedin-image {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    display: block; /* Ensures it displays correctly */
+}
+
