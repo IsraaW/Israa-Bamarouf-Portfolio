@@ -4,7 +4,7 @@
     --dark-bg: #05051C; /* Very dark background */
     --light-text: #C9D1D9; /* Light gray text, was too light */
     --accent-color: #B684E0; /* Soft purple */
-    --notice-text: #FFFFFF; /* White for special notices */
+    --notice-text: #f7dff3; /* White for special notices */
     --mission-text: #A6A9B6; /* New variable for darker text color */
 }
 
