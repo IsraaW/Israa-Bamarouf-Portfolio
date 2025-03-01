@@ -186,7 +186,7 @@ section{
     margin: auto 0;
     border-radius: 1000%;
     border-color: #B684E0;
-    border: 3px solid;
+    border: none;
     object-fit: cover;
 }
 
@@ -354,17 +354,17 @@ section{
     }
 
     .carousel-caption {
-        display: block !important;  /* Override Bootstrap's d-none on small screens */
+        display: block !important;  
         position: absolute;
-        top: 10px;      /* Positions the caption near the top */
-        left: 10px;     /* Aligns the caption to the left */
+        top: 10px;      
+        left: 10px;     
         right: auto;
         bottom: auto;
         width: auto;
         padding: 10px;
-        text-align: left;  /* You can change this to center if you prefer */
-        background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background for readability */
-        border-radius: 5px;  /* Optional: adds slight rounding for a polished look */
+        text-align: left;  
+        background: rgba(0, 0, 0, 0.5); 
+        border-radius: 5px;  
       }
   }
   .btn-link-container {
@@ -373,7 +373,7 @@ section{
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    margin-top: 1rem; /* positions the button under the text */
+    margin-top: 1rem; 
     transition: background 0.3s ease;
   }
   
@@ -381,15 +381,15 @@ section{
     background: rgba(255, 255, 255, 0.2);
   }
 
-/* Center and style indicators (small slide bars) */
+/* Center and style indicators  */
 .carousel-indicators {
     position: absolute;
-    bottom: 20px; /* Move slightly up */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex !important;
     list-style: none;
-    margin: 0;               /* Remove default list margin */
+    margin: 0;               
     padding: 0;
 
 }
@@ -398,7 +398,7 @@ section{
     width: 30px;
     height: 3px;
     margin: 5px;
-    background-color: #fff; /* White bars */
+    background-color: #fff; 
     border: none;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
@@ -406,10 +406,9 @@ section{
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color: #fff; /* Ensure active indicator is highlighted */
+    background-color: #fff; 
 }
 
-/* Modify Caption Styling */
 
 
 .carousel-caption h5 {
@@ -436,7 +435,7 @@ section{
     padding: 10px;
 }
 
-/* Button Style - Rectangle and Unclickable */
+
 .btn.disabled {
     pointer-events: none;
     background-color: #252728 !important;
