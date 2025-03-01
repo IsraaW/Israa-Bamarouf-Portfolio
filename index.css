@@ -9,8 +9,6 @@
     padding: 0;
 }
 
-
-
 Body{
   background-color: #05051C;
   font-family: "Poppins", serif;
@@ -18,8 +16,8 @@ Body{
   font-weight: 300;
   font-style: normal; 
 
-  
 }
+
 html {
     scroll-behavior: smooth ;
 }
@@ -167,8 +165,8 @@ section{
 
 .section-container {
     display: flex;
-    justify-content: center; /* Centers the child elements horizontally */
-    align-items: center;     /* Vertically aligns the child elements */
+    justify-content: center; 
+    align-items: center;     
     gap: 2rem; 
 }
 
