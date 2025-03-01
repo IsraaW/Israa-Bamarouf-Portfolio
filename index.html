@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -21,7 +21,7 @@
 
         <div> 
             <ul class="nav-links">
-                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#AboutMe">About Me</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
@@ -40,10 +40,12 @@
           </div>
 
           <div class='menu-links'>
-            <li><a href="#About Me" onclick="openMenu()">About Me</a></li>
+            <ul>
+            <li><a href="#AboutMe" onclick="openMenu()">About Me</a></li>
             <li><a href="#Education" onclick="openMenu()">Education</a></li>
             <li><a href="#Projects" onclick="openMenu()">Projects</a></li>
             <li><a href="#Contact" onclick="openMenu()">Contact</a></li>
+            </ul>
           </div>
         </div>
     </nav>
@@ -71,7 +73,7 @@
         </div>
     </section>
 
-    <section id="About Me">
+    <section id="AboutMe">
             <p class="section__text__p1">Get to Know More</p>
             <h1 class="title">About Me</h1>
     <div class="text-container">
@@ -94,18 +96,18 @@
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
-              />
+              >
               <h3>Achievements</h3>
-              <p>Earned Certificate of <br />Excellence every semester. </p>
+              <p>Earned Certificate of <br>Excellence every semester. </p>
             </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
-              />
+              >
               <h3>Education</h3>
-              <p>Bachelor’s in Software Engineering <br /> (2021–2026) </p>
+              <p>Bachelor’s in Software Engineering <br> (2021–2026) </p>
             </div>
           </div>
           <div class="text-container">
@@ -137,14 +139,16 @@
                 <div class="carousel-caption d-none d-md-block">
                   <h5>KidCoin</h5>
                   <p> In today's challenging world, teaching children financial literacy is essential for
-                    their future success. KidCoin is an interactive Android app that transforms money management into an engaging journey for children, it combines fun games and real-life simulations to teach budgeting, saving, and smart spending.<br> <br>
+                    their future success. KidCoin is an interactive Android app that transforms money management
+                     into an engaging journey for children, it combines fun games and real-life simulations to teach 
+                     budgeting, saving, and smart spending.<br> <br></p>
                     Explore features like:
                     <ul>
                         <li> <p> Interactive learning activities</p></li>
                         <li> <p> Real-world financial simulations</p></li>
                         <li> <p> Parental progress tracking</p></li>
                     </ul>
-                </p>
+                
                   <button class="btn btn-link-container" onclick="location.href='https://github.com/deemaoaloufi/KidCoin_App.git'">GitHub</button>
                 </div>
               </div>
@@ -154,14 +158,13 @@
                   <h5>UJ Future II</h5>
                   <p> Enhancing campus engagement for University of Jeddah students, this updated platform unites club details and activities
                      into one centralized hub. It offers a streamlined experience that empowers students to discover and join clubs effortlessly.<br> <br>
-                    Key features include:
+                    Key features include:</p>
                     <ul>
                         <li> <p> Unified Club Directory: Easily find all clubs and activities.</p></li>
                         <li> <p> Detailed Profiles: Get comprehensive info on each club.</p></li>
-                        <li> <p> Streamlined Engagement: Join clubs and stay informed effortlessly.
-                        </p></li>
+                        <li> <p> Streamlined Engagement: Join clubs and stay informed effortlessly.</p></li>
                     </ul>
-                </p>
+                
                   <button class="btn btn-link-container" onclick="location.href='https://www.figma.com/proto/6vjwqJYp20ujWhEAS6AzgR/MyFuture-%7C%7C-app?type=design&node-id=2-43&t=yrk07Ph4RqNPBkWx-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A43&mode=design'">Figma</button>
                 </div>
               </div>
@@ -173,14 +176,14 @@
                      with proactive, real-time tracking. Designed for Library Loans Ltd., it minimizes financial losses while streamlining operations.
                      Key highlights include:
                     <br> <br>
-                   Key features include:
+                   Key features include:</p>
                    <ul>
                        <li> <p>Overdue Tracking</p></li>
                        <li> <p> Return Management</p></li>
                        <li> <p> Financial Loss Prevention</p></li>
                        <li> <p> Market-Driven Innovation</p></li>
                    </ul>
-               </p>
+               
                   <button class="btn btn-link-container" onclick="location.href='https://www.figma.com/proto/l1iLjLRZZhLcYZnaeLQ3tH/RE-lab4?node-id=3-48&starting-point-node-id=3%3A3&t=J2bKuiehnpND9TgL-1'">Figma</button>
                 </div>
               </div>
@@ -203,7 +206,6 @@
 <section id="Contact">
     <h1 class="title">Contact Me</h1>
     
-
     <div id="socials-container">
         <img src="./assets/mail-icon.jpg" alt="My Email"
         class="icon" onclick="location.href='mailto:israa.Bamarouf@gmail.com'">
@@ -214,7 +216,7 @@
         <img src="./assets/github-icon.jpg" alt="My GitHub Profile"
         class="icon" onclick="location.href='https://github.com/IsraaW'">
     </div>
-</div>
+
 
 
 </section>
